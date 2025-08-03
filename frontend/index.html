@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AD YOUTUBE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="panel">
+            <div class="header">
+                <h1>AD YOUTUBE</h1>
+                <div class="indicator-light"></div>
+            </div>
+            <div class="input-section">
+                <input type="text" id="youtube-url" placeholder="PEGAR URL DE YOUTUBE AQUÍ">
+                <button id="fetch-button">OBTENER</button>
+            </div>
+            <div class="info-display" id="info-display">
+                <!-- La información del video aparecerá aquí -->
+            </div>
+            
+            <!-- Tabs -->
+            <div class="tab-container">
+                <button class="tab-link active" data-tab="video-tab">Video</button>
+                <button class="tab-link" data-tab="audio-tab">Audio</button>
+            </div>
+
+            <!-- Tab Content -->
+            <div id="video-tab" class="tab-content active">
+                <div class="download-options" id="video-download-options">
+                    <!-- Opciones de descarga de video -->
+                </div>
+            </div>
+            <div id="audio-tab" class="tab-content">
+                <div class="download-options" id="audio-download-options">
+                    <!-- Opciones de descarga de audio -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
